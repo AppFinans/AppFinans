@@ -232,7 +232,16 @@
                     method="POST"
                   >
 
-                    <div class="col-12 d-flex">
+                    <div class="col-12 col-sm-4">
+                        <div class="my-3">
+                          <small class="border-bottom">
+                            ID
+                            <strong>137</strong>
+                          </small>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-8 d-flex">
                       <div class="d-flex flex-column flex-sm-row border rounded p-2 m-auto" style="max-width: 320px;">
                         <label class="m-3">
                           <input type="radio" name="tipo" value="receita" />
@@ -254,7 +263,15 @@
                           <small>
                             Conta bancária
                           </small>
-                          <input type="text" name="conta" class="form-control" />
+                          <select
+                            name="conta"
+                            class="form-control"
+                          >
+                            <option selected>Selecionar conta</option>
+                            <option value="000000">000000</option>
+                            <option value="000001">000001</option>
+                            <option value="000002">000002</option>
+                          </select>
                         </label>
                     </div>
 
@@ -263,7 +280,15 @@
                           <small>
                             Plano de conta
                           </small>
-                          <input type="text" name="plano" class="form-control" />
+                          <select
+                            name="plano"
+                            class="form-control"
+                          >
+                              <option selected>Selecionar plano</option>
+                              <option value="ax45">ax45</option>
+                              <option value="xs1">xs1</option>
+                              <option value="fff">fff</option>
+                            </select>
                         </label>
                     </div>
                     
@@ -317,7 +342,7 @@
                     </div>
                     
                     <div class="col-12 d-flex">
-                      <div class="m-auto">
+                      <div class="m-auto p-3">
                         <button class="btn btn-success d-flex">
                           <span class="m-auto">
                             Lançar
