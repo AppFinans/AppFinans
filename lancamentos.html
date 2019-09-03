@@ -217,75 +217,120 @@
           <div class="row"> -->
               <div class="container">
                   <div class="row">
-                    <div class="col mb-5">
-                      <h1 class="display-4">Novo Lançamento</h1>
+                    <div class="col-12 mb-5">
+                      <h1 class="display-sm-4">
+                        <small>
+                          Novo Lançamento
+                        </small>
+                      </h1>
                     </div>
                   </div>
 
-                  <div class="col-md-2">
-                    <input class="form-control" type="text" placeholder="Id" readonly>
+                  <form
+                    class="row"
+                    action=""
+                    method="POST"
+                  >
+
+                    <div class="col-12 d-flex">
+                      <div class="d-flex flex-column flex-sm-row border rounded p-2 m-auto" style="max-width: 320px;">
+                        <label class="m-3">
+                          <input type="radio" name="tipo" value="receita" />
+                          <span class="text-success mx-1 text-uppercase">
+                            receita
+                          </span>
+                        </label>
+                        <label class="m-3 ml-sm-auto">
+                            <input type="radio" name="tipo" value="despesa" />
+                            <span class="text-danger mx-1 text-uppercase">
+                              despesa
+                            </span>
+                          </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                        <label class="my-2 d-block">
+                          <small>
+                            Conta bancária
+                          </small>
+                          <input type="text" name="conta" class="form-control" />
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                        <label class="my-2 d-block">
+                          <small>
+                            Plano de conta
+                          </small>
+                          <input type="text" name="plano" class="form-control" />
+                        </label>
+                    </div>
                     
-                  </div>
-            
-                  <div class="row mb-2">
-                    <div class="col-md-2">
-                      <select class="form-control" id="ano">
-                        <option value="">Data</option>
-                        <option value="2018">01/09/2019</option>
-                        <option value="2018">02/09/2019</option>
-                        <option value="2018">03/09/2019</option>
-                        <option value="2018">04/09/2019</option>
-                        <option value="2018">05/09/2019</option>
-                        <option value="2018">06/09/2019</option>
-                        <option value="2018">07/09/2019</option>
-                        <option value="2018">08/09/2019</option>
-                        <option value="2018">09/09/2019</option>
-                        <option value="2018">10/09/2019</option>
-                        <option value="2018">11/09/2019</option>
-                        <option value="2018">12/09/2019</option>
-
-                      </select>
+                    <div class="col-12 col-sm-6">
+                        <label class="my-2 d-block">
+                          <small>
+                            Documento
+                          </small>
+                          <input type="text" name="doc" class="form-control" />
+                        </label>
                     </div>
-            
-                    <div class="col-md-2">
-                      <select class="form-control" id="Tipo">
-                        <option value="">Receita</option>
-                        <option value="1">Despesa</option>
-                      </select>
+
+                    <div class="col-12 col-sm-6">
+                        <label class="my-2 d-block">
+                          <small>
+                            Beneficiário
+                          </small>
+                          <input type="text" name="beneficiario" class="form-control" />
+                        </label>
+                    </div>
+
+                    <div class="col-12">
+                      <hr>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                        <label class="my-2 d-block">
+                          <small>
+                            Descrição
+                          </small>
+                          <input type="text" name="descricao" class="form-control" />
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <label class="my-2 d-block">
+                          <small>
+                            Data
+                          </small>
+                          <input type="date" name="data" class="form-control" />
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                        <label class="my-2 d-block">
+                          <small>
+                            Valor
+                          </small>
+                          <input type="text" name="valor" class="form-control" />
+                        </label>
                     </div>
                     
-            
-                    <div class="col-md-6">
-                      <select class="form-control" id="tipo">
-                        <option>Plano de conta</option>
-                        <option value="1">Alimentação</option>
-                        <option value="2">Educação</option>
-                        <option value="3">Lazer</option>
-                        <option value="4">Saúde</option>
-                        <option value="5">Transporte</option>
-                      </select>
+                    <div class="col-12 d-flex">
+                      <div class="m-auto">
+                        <button class="btn btn-success d-flex">
+                          <span class="m-auto">
+                            Lançar
+                          </span>
+                          <span class="pl-1 m-auto">
+                            <i class="fas fa-check"></i>
+                          </span>
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                    
+                  </form>
 
-                  <div class="col-md-2">
-                    <input type="text" class="form-control" placeholder="Dia" id="dia" />
-                  </div>
-            
-                  <div class="row">
-                    <div class="col-md-8">
-                      <input type="text" class="form-control" placeholder="Descrição" id="descricao" />
-                    </div>
-            
-                    <div class="col-md-2">
-                      <input type="text" class="form-control" placeholder="Valor" id="valor" />
-                    </div>
-            
-                    <div class="col-md-2 d-flex justify-content-end">
-                      <button type="button" class="btn btn-primary">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
-                  </div>
                 </div>
 
             <!-- Earnings (Monthly) Card Example 
