@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Finans - Lançamentos</title>
+  <title>Finans - Plano de Contas</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -81,10 +81,10 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Consultas gerais</h6>
-            <a class="collapse-item" href="utilities-color.html">Visão Geral</a>
-            <a class="collapse-item" href="utilities-border.html">Balancete</a>
-            <a class="collapse-item" href="utilities-animation.html">Analise Financeira</a>
-            <a class="collapse-item" href="utilities-other.html">Extrato</a>
+            <a class="collapse-item" href="index.html">Visão Geral</a>
+            <a class="collapse-item" href="404.html">Balancete</a>
+            <a class="collapse-item" href="404.htmll">Analise Financeira</a>
+            <a class="collapse-item" href="404.html">Extrato</a>
           </div>
         </div>
       </li>
@@ -106,9 +106,9 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Dados Bancários</h6>
-            <a class="collapse-item" href="login.html">Contas Bancárias</a>
-            <a class="collapse-item" href="register.html">Plano de Contas</a>
-            <a class="collapse-item" href="forgot-password.html">Sub Contas</a>
+            <a class="collapse-item" href="conta_bancaria.html">Contas Bancárias</a>
+            <a class="collapse-item" href="plano_de_contas.html">Plano de Contas</a>
+            <a class="collapse-item" href="sub_contas.html">Sub Contas</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Cadastro de Histórico</h6>
             <a class="collapse-item" href="404.html">Histórico Padrão</a>
@@ -210,7 +210,6 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800"></h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Gerar Comprovante</a>
           </div>
 
           <!-- Content Row 
@@ -220,7 +219,7 @@
                     <div class="col-12 mb-5">
                       <h1 class="display-sm-4">
                         <small>
-                          Novo Lançamento
+                          Plano de Contas
                         </small>
                       </h1>
                     </div>
@@ -232,132 +231,51 @@
                     method="POST"
                   >
 
-                    <div class="col-12 col-sm-4">
-                        <div class="my-3">
-                          <small class="border-bottom">
-                            Código Lançamento:
-                            <strong>137</strong>
-                          </small>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-8 d-flex">
-                      <div class="d-flex flex-column flex-sm-row border rounded p-2 m-auto" style="max-width: 320px;">
-                        <label class="m-3">
-                          <input type="radio" name="tipo" value="receita" />
-                          <span class="text-success mx-1 text-uppercase">
-                            receita
-                          </span>
-                        </label>
-                        <label class="m-3 ml-sm-auto">
-                            <input type="radio" name="tipo" value="despesa" />
-                            <span class="text-danger mx-1 text-uppercase">
-                              despesa
-                            </span>
-                          </label>
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6">
-                        <label class="my-2 d-block">
-                          <small>
-                            Conta bancária
-                          </small>
-                          <select
-                            name="conta"
-                            class="form-control"
-                          >
-                            <option selected>Selecionar conta</option>
-                            <option value="000000">000000</option>
-                            <option value="000001">000001</option>
-                            <option value="000002">000002</option>
-                          </select>
-                        </label>
-                    </div>
-
-                    <div class="col-12 col-sm-6">
-                        <label class="my-2 d-block">
-                          <small>
-                            Plano de conta
-                          </small>
-                          <select
-                            name="plano"
-                            class="form-control"
-                          >
-                              <option selected>Selecionar plano</option>
-                              <option value="ax45">ax45</option>
-                              <option value="xs1">xs1</option>
-                              <option value="fff">fff</option>
-                            </select>
-                        </label>
-                    </div>
                     
+
+                    
+
+                                        
                     <div class="col-12 col-sm-6">
                         <label class="my-2 d-block">
                           <small>
-                            Documento
+                            Numero 
                           </small>
                           <input type="text" name="doc" class="form-control" />
                         </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
-                      <label class="my-2 d-block">
-                        <small>
-                          Historico Padrão
-                        </small>
-                        <input type="text" name="doc" class="form-control" />
-                      </label>
-                  </div>
+                    
 
                     <div class="col-12 col-sm-6">
                         <label class="my-2 d-block">
                           <small>
-                            Beneficiário
+                            Descrição 
                           </small>
                           <input type="text" name="beneficiario" class="form-control" />
                         </label>
                     </div>
 
-                    <div class="col-12">
-                      <hr>
-                    </div>
-
-                    <div class="col-12 col-sm-6">
-                        <label class="my-2 d-block">
-                          <small>
-                            Descrição
-                          </small>
-                          <input type="text" name="descricao" class="form-control" />
-                        </label>
-                    </div>
-
-                    <div class="col-12 col-sm-4">
-                        <label class="my-2 d-block">
-                          <small>
-                            Data
-                          </small>
-                          <input type="date" name="data" class="form-control" />
-                        </label>
-                    </div>
-
-                    <div class="col-12 col-sm-6">
-                        <label class="my-2 d-block">
-                          <small>
-                            Valor
-                          </small>
-                          <input type="text" name="valor" class="form-control" />
-                        </label>
-                    </div>
+                    
                     
                     <div class="col-12 d-flex">
                       <div class="m-auto p-3">
                         <button class="btn btn-success d-flex">
                           <span class="m-auto">
-                            Lançar
+                            Salvar
                           </span>
                           <span class="pl-1 m-auto">
                             <i class="fas fa-check"></i>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="m-auto p-3">
+                        <button class="btn btn-danger d-flex">
+                          <span class="m-auto">
+                            Cancelar
+                          </span>
+                          <span class="pl-1 m-auto">
+                            <i class="fas fa-times"></i>
                           </span>
                         </button>
                       </div>
@@ -366,10 +284,14 @@
                   </form>
 
                 </div>
-           
+            
             </div> 
 
-           
+            <div class="col-lg-6 mb-4">
+
+              
+      </div>
+      <!-- End of Main Content -->
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
