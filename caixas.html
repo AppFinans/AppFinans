@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Finans - Lançamentos</title>
+  <title>Finans - Caixas</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -64,10 +64,10 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Movimentação Financeira</h6>
-            <a class="collapse-item" href="lancamentos.html">Inserir Lancamentos</a>
-            <a class="collapse-item" href="consulta_lancamentos.html">Consultar Lançamentos</a>
-            <a class="collapse-item" href="caixas.html">Inserir Caixas</a>
-            <a class="collapse-item" href="consulta_caixas.html">Consultar Caixas</a>
+            <a class="collapse-item" href="contas_a_pagar.html">Inserir Lancamentos</a>
+            <a class="collapse-item" href="consulta_despesas.html">Consultar Lançamentos</a>
+            <a class="collapse-item" href="cards.html">Inserir Caixas</a>
+            <a class="collapse-item" href="cards.html">Consultar Caixas</a>
           </div>
         </div>
       </li>
@@ -81,10 +81,10 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Consultas gerais</h6>
-            <a class="collapse-item" href="index.html">Visão Geral</a>
-            <a class="collapse-item" href="balancete.html">Balancete</a>
-            <a class="collapse-item" href="analise_financeira.html">Analise Financeira</a>
-            <a class="collapse-item" href="extrato.html">Extrato</a>
+            <a class="collapse-item" href="utilities-color.html">Visão Geral</a>
+            <a class="collapse-item" href="utilities-border.html">Balancete</a>
+            <a class="collapse-item" href="utilities-animation.html">Analise Financeira</a>
+            <a class="collapse-item" href="utilities-other.html">Extrato</a>
           </div>
         </div>
       </li>
@@ -232,87 +232,41 @@
                     method="POST"
                   >
 
-                    <div class="col-12 col-sm-4">
-                        <div class="my-3">
-                          <small class="border-bottom">
-                            Código Lançamento:
-                            <strong>137</strong>
-                          </small>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-8 d-flex">
-                      <div class="d-flex flex-column flex-sm-row border rounded p-2 m-auto" style="max-width: 320px;">
-                        <label class="m-3">
-                          <input type="radio" name="tipo" value="receita" />
-                          <span class="text-success mx-1 text-uppercase">
-                            receita
-                          </span>
-                        </label>
-                        <label class="m-3 ml-sm-auto">
-                            <input type="radio" name="tipo" value="despesa" />
-                            <span class="text-danger mx-1 text-uppercase">
-                              despesa
-                            </span>
-                          </label>
-                      </div>
-                    </div>
+                  <div class="col-12 col-sm-4">
+                    <label class="my-2 d-block">
+                      <small>
+                        Data
+                      </small>
+                      <input type="date" name="data" class="form-control" />
+                    </label>
+                   </div>
 
                     <div class="col-12 col-sm-6">
                         <label class="my-2 d-block">
                           <small>
-                            Conta bancária
+                            Turno
                           </small>
                           <select
                             name="conta"
                             class="form-control"
                           >
-                            <option selected>Selecionar conta</option>
-                            <option value="000001">Cofre</option>
-                            <option value="000001">Banco Itaú</option>
-                            <option value="000002">Caixa Economica</option>
+                            <option selected>Selecione o turno...</option>
+                            <option value="000001">Almoço</option>
+                            <option value="000002">Jantar</option>
                           </select>
                         </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
-                        <label class="my-2 d-block">
-                          <small>
-                            Plano de conta
-                          </small>
-                          <select
-                            name="plano"
-                            class="form-control"
-                          >
-                              <option selected>Selecionar plano...</option>
-                              <option value="100">Receitas</option>
-                              <option value="200">Folha de Pagamento</option>
-                              <option value="300">Encargos Social</option>
-                            </select>
-                        </label>
+                    <div class="col-12">
+                      <hr>
                     </div>
 
-                    <div class="col-12 col-sm-6">
-                      <label class="my-2 d-block">
-                        <small>
-                          Sub Conta
-                        </small>
-                        <select
-                          name="plano"
-                          class="form-control"
-                        >
-                            <option selected>Sub conta...</option>
-                            <option value="101">Dinheiro</option>
-                            <option value="201">Salário</option>
-                            <option value="205">Diversos</option>
-                          </select>
-                      </label>
-                  </div>
+        
                     
                     <div class="col-12 col-sm-6">
                         <label class="my-2 d-block">
                           <small>
-                            Documento
+                            Dinheiro
                           </small>
                           <input type="text" name="doc" class="form-control" />
                         </label>
@@ -321,50 +275,68 @@
                     <div class="col-12 col-sm-6">
                       <label class="my-2 d-block">
                         <small>
-                          Historico Padrão
+                          Carta de Crédito
                         </small>
                         <input type="text" name="doc" class="form-control" />
                       </label>
-                  </div>
+                    </div>
 
                     <div class="col-12 col-sm-6">
                         <label class="my-2 d-block">
                           <small>
-                            Beneficiário
+                            Carta de Débito
                           </small>
                           <input type="text" name="beneficiario" class="form-control" />
                         </label>
                     </div>
 
-                    <div class="col-12">
-                      <hr>
-                    </div>
-
                     <div class="col-12 col-sm-6">
                         <label class="my-2 d-block">
                           <small>
-                            Descrição
+                            Cheque
                           </small>
                           <input type="text" name="descricao" class="form-control" />
                         </label>
                     </div>
 
-                    <div class="col-12 col-sm-4">
-                        <label class="my-2 d-block">
-                          <small>
-                            Data
-                          </small>
-                          <input type="date" name="data" class="form-control" />
-                        </label>
+                    <div class="col-12 col-sm-6">
+                      <label class="my-2 d-block">
+                        <small>
+                          Ticket
+                        </small>
+                        <input type="text" name="descricao" class="form-control" />
+                      </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <label class="my-2 d-block">
+                        <small>
+                          Pagamentos Online
+                        </small>
+                        <input type="text" name="descricao" class="form-control" />
+                      </label>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <label class="my-2 d-block">
+                        <small>
+                          A Receber
+                        </small>
+                        <input type="text" name="descricao" class="form-control" />
+                      </label>
                     </div>
 
                     <div class="col-12 col-sm-6">
                         <label class="my-2 d-block">
                           <small>
-                            Valor
+                            Diferença de Caixa
                           </small>
                           <input type="text" name="valor" class="form-control" />
                         </label>
+                    </div>
+
+                    <div class="col-12">
+                      <hr>
                     </div>
                     
                     <div class="col-12 d-flex">
