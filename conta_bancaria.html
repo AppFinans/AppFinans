@@ -37,15 +37,6 @@
         <div class="sidebar-brand-text mx-3"></div>
       </a>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Visão Geral</span></a>
-      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -239,19 +230,27 @@
                             Tipo Conta
                           </small>
                           <select
-                            name="conta"
-                            class="form-control"
+                          name="conta"
+                          class="form-control"
                           >
-                            <option selected>Selecione o tipo:</option>
-                            <option value="000000">Corrente</option>
-                            <option value="000001">Poupança</option>
+                          <option selected>Selecione o tipo:</option>
+                          <option value="000000">Corrente</option>
+                          <option value="000001">Poupança</option>
                             <option value="000002">Aplicação</option>
                           </select>
                         </label>
-                    </div>
-
-                                        
-                    <div class="col-12 col-sm-6">
+                      </div>
+                      
+                      <div class="col-12 col-sm-6">
+                          <label class="my-2 d-block">
+                            <small>
+                              Descriçao Conta
+                            </small>
+                            <input type="text" name="beneficiario" class="form-control" />
+                          </label>
+                      </div>
+                      
+                    <div class="col-12 col-sm-4">
                         <label class="my-2 d-block">
                           <small>
                             Numero Banco
@@ -262,16 +261,8 @@
 
                     
 
-                    <div class="col-12 col-sm-6">
-                        <label class="my-2 d-block">
-                          <small>
-                            Descriçao Conta
-                          </small>
-                          <input type="text" name="beneficiario" class="form-control" />
-                        </label>
-                    </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                       <label class="my-2 d-block">
                         <small>
                           Agencia
@@ -280,12 +271,30 @@
                       </label>
                   </div>
 
-                  <div class="col-12 col-sm-6">
+                  <div class="col-12 col-sm-4">
                     <label class="my-2 d-block">
                       <small>
-                        Numero
+                        Numero da Conta
                       </small>
                       <input type="text" name="beneficiario" class="form-control" />
+                    </label>
+                  </div>
+
+                  <div class="col-12 col-sm-4">
+                    <label class="my-2 d-block">
+                      <small>
+                        Taxa de Desconto %
+                      </small>
+                      <input type="text" name="descricao" class="form-control" />
+                    </label>
+                  </div>
+
+                  <div class="col-12 col-sm-4">
+                    <label class="my-2 d-block">
+                      <small>
+                        Prazo 
+                      </small>
+                      <input type="text" name="valor" class="form-control" />
                     </label>
                   </div>
 
@@ -293,7 +302,7 @@
                       <hr>
                     </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                         <label class="my-2 d-block">
                           <small>
                             Saldo inicial
@@ -302,27 +311,10 @@
                         </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
-                      <label class="my-2 d-block">
-                        <small>
-                          Taxa de Desconto %
-                        </small>
-                        <input type="text" name="descricao" class="form-control" />
-                      </label>
-                    </div>
-
-                    <div class="col-12 col-sm-6">
-                        <label class="my-2 d-block">
-                          <small>
-                            Prazo 
-                          </small>
-                          <input type="text" name="valor" class="form-control" />
-                        </label>
-                    </div>
                     
                     <div class="col-12 d-flex">
-                      <div class="m-auto p-3">
-                        <button class="btn btn-success d-flex">
+                      <div class="my-auto p-3">
+                        <button class="btn btn-success d-flex btn-block">
                           <span class="m-auto">
                             Salvar
                           </span>
@@ -331,8 +323,8 @@
                           </span>
                         </button>
                       </div>
-                      <div class="m-auto p-3">
-                        <button class="btn btn-danger d-flex">
+                      <div class="my-auto p-3">
+                        <button class="btn btn-danger d-flex btn-block">
                           <span class="m-auto">
                             Cancelar
                           </span>

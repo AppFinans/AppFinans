@@ -37,15 +37,6 @@
         <div class="sidebar-brand-text mx-3"></div>
       </a>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Visão Geral</span></a>
-      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -232,7 +223,7 @@
                     method="POST"
                   >
 
-                  <div class="col-12 col-sm-4">
+                  <div class="col-12 col-sm-6">
                     <label class="my-2 d-block">
                       <small>
                         Data
@@ -263,7 +254,7 @@
 
         
                     
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                         <label class="my-2 d-block">
                           <small>
                             Dinheiro
@@ -272,7 +263,7 @@
                         </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                       <label class="my-2 d-block">
                         <small>
                           Carta de Crédito
@@ -281,7 +272,7 @@
                       </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                         <label class="my-2 d-block">
                           <small>
                             Carta de Débito
@@ -290,7 +281,7 @@
                         </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                         <label class="my-2 d-block">
                           <small>
                             Cheque
@@ -299,7 +290,7 @@
                         </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                       <label class="my-2 d-block">
                         <small>
                           Ticket
@@ -308,7 +299,7 @@
                       </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                       <label class="my-2 d-block">
                         <small>
                           Pagamentos Online
@@ -317,10 +308,23 @@
                       </label>
                     </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-4">
                       <label class="my-2 d-block">
                         <small>
                           A Receber
+                        </small>
+                        <input type="text" name="descricao" class="form-control" />
+                      </label>
+                    </div>
+
+                    <div class="col-12">
+                      <hr>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <label class="my-2 d-block">
+                        <small>
+                          Nº de Pessoas Atendidas
                         </small>
                         <input type="text" name="descricao" class="form-control" />
                       </label>
@@ -340,13 +344,23 @@
                     </div>
                     
                     <div class="col-12 d-flex">
-                      <div class="m-auto p-3">
-                        <button class="btn btn-success d-flex">
+                      <div class="my-auto p-3">
+                        <button class="btn btn-success d-flex btn-block">
                           <span class="m-auto">
-                            Lançar
+                            Salvar
                           </span>
                           <span class="pl-1 m-auto">
                             <i class="fas fa-check"></i>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="my-auto p-3">
+                        <button class="btn btn-danger d-flex btn-block">
+                          <span class="m-auto">
+                            Cancelar
+                          </span>
+                          <span class="pl-1 m-auto">
+                            <i class="fas fa-times"></i>
                           </span>
                         </button>
                       </div>
