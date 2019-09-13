@@ -218,7 +218,7 @@
 
                   <form
                     class="row"
-                    action=""
+                    action="http://rlbenevides.com.br/appfincanceiro/backend/api/contasBancarias"
                     method="POST"
                   >
 
@@ -230,13 +230,14 @@
                             Tipo Conta
                           </small>
                           <select
-                          name="conta"
+                          name="tipoConta"
                           class="form-control"
+                          id="tipoConta"
                           >
                           <option selected>Selecione o tipo:</option>
-                          <option value="000000">Corrente</option>
-                          <option value="000001">Poupança</option>
-                            <option value="000002">Aplicação</option>
+                          <option value="Corrente">Corrente</option>
+                          <option value="Poupança<">Poupança</option>
+                            <option value="Aplicação">Aplicação</option>
                           </select>
                         </label>
                       </div>
@@ -246,7 +247,7 @@
                             <small>
                               Descriçao Conta
                             </small>
-                            <input type="text" name="beneficiario" class="form-control" />
+                            <input type="text" name="descricao" class="form-control" />
                           </label>
                       </div>
                       
@@ -255,7 +256,7 @@
                           <small>
                             Numero Banco
                           </small>
-                          <input type="text" name="doc" class="form-control" />
+                          <input type="text" name="numeroBanco" class="form-control" />
                         </label>
                     </div>
 
@@ -267,7 +268,7 @@
                         <small>
                           Agencia
                         </small>
-                        <input type="text" name="beneficiario" class="form-control" />
+                        <input type="text" name="agencia" class="form-control" />
                       </label>
                   </div>
 
@@ -276,7 +277,7 @@
                       <small>
                         Numero da Conta
                       </small>
-                      <input type="text" name="beneficiario" class="form-control" />
+                      <input type="text" name="numeroConta" class="form-control" />
                     </label>
                   </div>
 
@@ -285,7 +286,7 @@
                       <small>
                         Taxa de Desconto %
                       </small>
-                      <input type="text" name="descricao" class="form-control" />
+                      <input type="text" name="taxaDesconto" class="form-control" />
                     </label>
                   </div>
 
@@ -294,7 +295,7 @@
                       <small>
                         Prazo 
                       </small>
-                      <input type="text" name="valor" class="form-control" />
+                      <input type="text" name="prazoPedido" class="form-control" />
                     </label>
                   </div>
 
@@ -307,14 +308,14 @@
                           <small>
                             Saldo inicial
                           </small>
-                          <input type="text" name="descricao" class="form-control" />
+                          <input type="text" name="saldoInicial" class="form-control" />
                         </label>
                     </div>
 
                     
                     <div class="col-12 d-flex">
                       <div class="my-auto p-3">
-                        <button class="btn btn-success d-flex btn-block">
+                        <button class="btn btn-success d-flex btn-block" id="enviar" type="submit">
                           <span class="m-auto">
                             Salvar
                           </span>
@@ -324,7 +325,7 @@
                         </button>
                       </div>
                       <div class="my-auto p-3">
-                        <button class="btn btn-danger d-flex btn-block">
+                        <button class="btn btn-danger d-flex btn-block" type="reset">
                           <span class="m-auto">
                             Cancelar
                           </span>

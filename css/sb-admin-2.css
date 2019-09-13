@@ -15,6 +15,10 @@
    max-width: 576px !important;
  }
 
+ .mw-sm{
+  max-width: 768px !important;
+}
+
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
